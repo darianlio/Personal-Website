@@ -10,13 +10,13 @@ body {
 }
 
 .container{
-    width:100%;
+    width:1200px;
     margin: 0 auto;
     margin-left: 80px;
 }
 
 .header {
-    width: 90%;
+    width: 100%;
     top: 0;
     position: fixed;
     color:white;
@@ -80,10 +80,10 @@ a.social{
 #copyright{
     width: 100%;
     margin: 0 auto;
+    font-size: 10px;
 }
 
 .copyright {
-    font-size: 10px;
     float:left;
     list-style:none;
     margin-left: 80px;

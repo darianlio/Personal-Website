@@ -10,12 +10,13 @@ body {
 }
 
 .container{
-    width:960px;
+    width:100%;
     margin: 0 auto;
+    margin-left: 80px;
 }
 
 .header {
-    width: 100%;
+    width: 90%;
     top: 0;
     position: fixed;
     color:white;
@@ -30,15 +31,16 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style:none;
-    float: left;
-    margin-left: 25px;
-    padding-top: 25px
+
+.nav {
+    float: right;
 }
 
-.nav{
-    float: right;
+.nav ul li {
+    list-style:none;
+    float:left;
+    margin-left: 25px;
+    padding-top: 25px
 }
 
 footer{
@@ -54,18 +56,18 @@ footer{
     margin: 0 auto;
 }
 
-div.social {
+.social {
     float: left;
     margin-top: 10px;
 }
 
-div.resume{
+.resume{
     float:left;
     margin-top: 10px;
     margin-left: 25px;
 }
 
-div.contact{
+.contact{
     float:left;
     margin-top: 10px;
     margin-left:25px;
@@ -73,4 +75,16 @@ div.contact{
 
 a.social{
     margin-right: 15px;
+}
+
+#copyright{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.copyright {
+    font-size: 10px;
+    float:left;
+    list-style:none;
+    margin-left: 80px;
 }

@@ -3,27 +3,47 @@
     <head>
         <title>Darian Lio</title>
         <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" type ="text/css" href="main.css">
     </head>
     <body>
-        <div class="header">
+        <header>
             <div class="container">
                 <div class="logo">
-                    <h1>DARIAN LIO</h1>
+                    <h1><a href="index.html"><img src="images/icon/logo.png" width = 50px/></a></h1>
                 </div>
                 
-                <div class="nav">
+                <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Portfolio</li>
-                        <li>Resume</li>
-                        <li>Contact</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
+                </nav>
+            </div>
+        </header>
+            
+        <section id="showcase">
+            <div class="container">
+                <img id="myface" src = "images/icon/myface2.png" width="300px" />
+                <h1>DARIAN LIO </h1>
+                <p>Computer Engineer | Web Developer | Queen's University</p>
+            </div>
+        </section>
+        
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <img src="images/icon/webicon.png"/>
+                    <h3>Web Design</h3>
+                    <p>HTML, CSS, JAVASCRIPT</p>
                 </div>
             </div>
-        </div>
+        </section>
+        
         <footer>
             <div id="foot">
                 <div class="social">
@@ -40,8 +60,7 @@
                     <p>
                         Resume.pdf <br>
                     </p>
-                </div>
-                
+                </div>  
                 <div class="contact">
                     <h3>CONTACT</h3>
                     <p>
@@ -54,9 +73,10 @@
             </div>
             <div id="copyright">
                 <div class="copyright">
-                    <h3>COPYRIGHT © DARIAN LIO 2017</h3>
+                    <h3>COPYRIGHT &copy; 2017 DARIAN LIO </h3>
                 </div>
             </div>
         </footer>
+        <script src="javascript.js"></script>
     </body>
 </html>

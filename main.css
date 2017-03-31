@@ -1,47 +1,104 @@
-html{
-    font-family: 'Roboto', sans-serif;
-}
 body {
-    width: 100%;
-    margin: auto;
-    background-image: url("images/icon/background.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    animation: fadeIn 2s;
-}
-
-.container{
-    width:1200px;
-    margin: 0 auto;
-    margin-left: 80px;
-}
-
-.header {
-    width: 100%;
-    top: 0;
-    position: fixed;
-    color:white;
-}
-
-.logo{
-    float: left;
-    font-size: 20px;
+    font: 15px/1.5 Lato, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: white;
+    animation: fadeIn 3s;
+   
 }
 
 a {
     text-decoration: none;
 }
 
-
-.nav {
-    float: right;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-.nav ul li {
-    list-style:none;
+.container{
+    width:90%;
+    margin: 0 auto;
+    margin-left: 80px;
+    overflow:hidden;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    padding-top: 10px;
+    color:white;
+    min-height: 70px;
+    border-bottom: #0dbc8d 4px solid;
+    background: black;
+}
+
+.logo{
+    float: left;
+    font-size: 15px;
+    margin: 0;
+}
+
+header li a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    margin-top: 18px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color:#dddddd;
+    font-weight:bold;
+    
+}
+
+#showcase{
+    min-height: 300px; 
+    background: #fbfbfb 0 -300px;
+    text-align: center;
+    color:black;
+}
+
+#showcase img {
+    margin-top: 50px;
+}
+
+#showcase h1{
+    font: 15px/1.5 Rubik, sans-serif;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
     float:left;
-    margin-left: 25px;
-    padding-top: 25px
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+    
 }
 
 footer{
@@ -49,6 +106,8 @@ footer{
     height:200px;
     margin-top:500px;
     color:white;
+    background: black;
+    border-top: #0dbc8d 4px solid;
 }
 
 #foot{
@@ -78,15 +137,16 @@ a.social{
     margin-right: 15px;
 }
 
-#copyright{
+.copyright{
     width: 100%;
     margin: 0 auto;
     font-size: 10px;
-}
-
-.copyright {
+    background: black;
     float:left;
     list-style:none;
+}
+
+.copyright h3{
     margin-left: 80px;
 }
 
@@ -98,4 +158,23 @@ a.social{
 @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media(max-width: 768px){
+    header .logo, 
+    header nav, 
+    header nav li,
+    #boxes .box{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+    
+    #showcase img{
+        margin-top:40px;
+    }
 }

@@ -102,11 +102,12 @@ header a:hover{
 
 article#description{
     margin-top: 20px;
-    margin-bottom:100px;
-    width:65%;
+    margin-bottom: 50px;
 }
 
 .description{
+    width:65%;
+    float:left;
     padding:15px;
     color:black;
     background:#fbfbfb;
@@ -114,6 +115,18 @@ article#description{
     margin-bottom:10px;
     border-top: #0dbc8d 4px solid;
 }
+
+.note{
+    float:right;
+    width:25%;
+    padding:15px;
+    color:black;
+    background:#fbfbfb;
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-top: #0dbc8d 4px solid;
+}
+
 
 footer{
     width: 100%;

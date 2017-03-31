@@ -92,12 +92,12 @@ header a:hover{
 #boxes .box{
     float:left;
     text-align: center;
-    width: 100%;
+    width: 31.68%;
     padding: 10px;
 }
 
 #boxes .box img{
-    width: 90px;
+    width: 150px;
     
 }
 
@@ -176,5 +176,7 @@ a.social{
     
     #showcase img{
         margin-top:40px;
+        width: 100%;
+        height: auto;
     }
 }

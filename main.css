@@ -7,6 +7,7 @@ body {
     background-image: url("images/icon/background.jpg");
     background-repeat:no-repeat;
     background-size:cover;
+    animation: fadeIn 2s;
 }
 
 .container{
@@ -87,4 +88,14 @@ a.social{
     float:left;
     list-style:none;
     margin-left: 80px;
+}
+
+@keyframe fadeIn{
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

@@ -95,6 +95,10 @@ header a:hover{
     padding: 10px;
 }
 
+#boxes .box h3{
+    font: 15px/1.5 Rubik, sans-serif;
+}
+
 #boxes .box img{
     width: 150px;
     
@@ -103,6 +107,11 @@ header a:hover{
 article#description{
     margin-top: 20px;
     margin-bottom: 50px;
+    
+}
+
+article#description h3{
+    font: 15px/1.5 Rubik, sans-serif;
 }
 
 .description{

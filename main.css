@@ -101,10 +101,25 @@ header a:hover{
     
 }
 
+article#description{
+    margin-top: 20px;
+    margin-bottom:100px;
+    width:65%;
+}
+
+.description{
+    padding:15px;
+    color:black;
+    background:#fbfbfb;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
 footer{
+    margin-top:500px;
     width: 100%;
     height:200px;
-    margin-top:500px;
+    margin-top:0px;
     color:white;
     background: black;
     border-top: #0dbc8d 4px solid;

@@ -31,6 +31,7 @@ header {
     min-height: 70px;
     border-bottom: #0dbc8d 4px solid;
     background: black;
+    position:fixed;
 }
 
 .logo{
@@ -64,10 +65,10 @@ header a:hover{
 }
 
 #showcase{
-    min-height: 300px; 
+    min-height: 400px; 
     background: #fbfbfb 0 -300px;
     text-align: center;
-    color:black;
+    margin-top: 100px;x
 }
 
 #showcase img {
@@ -100,7 +101,12 @@ header a:hover{
 }
 
 #boxes .box img{
-    width: 150px;
+    width: 125px;
+}
+
+#boxes .box img:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.15);
     
 }
 
@@ -114,7 +120,7 @@ article#description h3{
     font: 15px/1.5 Rubik, sans-serif;
 }
 
-.description{
+.aboutme{
     width:65%;
     float:left;
     padding:15px;
@@ -125,7 +131,7 @@ article#description h3{
     border-top: #0dbc8d 4px solid;
 }
 
-.note{
+.resume1{
     float:right;
     width:25%;
     padding:15px;
@@ -147,9 +153,13 @@ footer{
 }
 
 #foot{
-    width: 1200px;
+    width: 88%;
     height: 100%;
     margin: 0 auto;
+}
+
+#foot h3{
+    font: 15px/1.5 Rubik, sans-serif;
 }
 
 .social {

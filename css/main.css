@@ -103,7 +103,6 @@ header h1 {
 
 /*ABOUT ME*/
 .aboutme{
-    background-image: url(../img/bg8.png);
     background-size: cover;
     background-color: #f0f0f0;
     border-bottom: 4px solid #686f68;
@@ -133,7 +132,7 @@ header h1 {
 }
 
 .skills{
-     padding: 0 25%;
+     padding: 0 25% 50px;
 }
 
 .skills ul{
@@ -184,6 +183,7 @@ header h1 {
     color: white;
     text-align: center;
     margin: 10%;
+    padding-bottom: 50px;
 }
 
 .box img:hover{
@@ -227,13 +227,14 @@ header h1 {
 .res {
     display: block;
     margin: 0 auto;
-    padding: 20px;
+    padding-bottom: 50px;
 }
 
 /*CONTACT*/
 .contactme{
     background-image: url('../img/bg5.jpg');
     background-size: cover;
+    padding-bottom: 50px;
 }
 
 form {

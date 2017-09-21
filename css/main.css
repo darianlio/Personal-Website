@@ -4,6 +4,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header{
@@ -449,7 +450,7 @@ footer {
     }
     
     header .logo {
-        padding-top: 20px;
+        padding-top: 40px;
     }
     
     header nav{
@@ -462,7 +463,7 @@ footer {
     
     .arrow-down{
         position: relative;
-        margin-top: 25px;
+        margin-top: -25px;
     }
     
     .face img{

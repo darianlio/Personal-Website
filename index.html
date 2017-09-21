@@ -1,131 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Darian Lio | Comp Eng</title>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta charset="utf-8"> 
         <link rel="stylesheet" type ="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <h1><a href="index.html"><img src="images/icon/logo.png" width=100px/></a></h1>
-                </div>
-                <nav>
-                    <ul class ="nav">
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+        <header> <!--Header-->
+            <div class = "logo"><a href="#"><img src="img/logo.png"/ width='100px'></a></div>       
+            <nav> <!--Navigation Bar-->
+                <a href="#">ABOUT ME</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">RESUME</a>
+                <a href="#">CONTACT</a>
+            </nav>
+
+            <h1>Darian Lio</h1>
+            <p class="description">Computer Engineer | Coder | Designer </p>
+
+            <!--Arrow-->
+            <div class="arrow-down"></div>
+        </header>
+
+
+        <div class="aboutme"> <!--About Me-->
+            <h1>ABOUT ME</h1>
+            <div class="face">
+                <img src="img/me.png" width=400px/>
             </div>
-        </header> 
-        <div id="wrapper">
-            <div id="inner-wrapper">
-                <section id="showcase">
-                    <div class="container">
-                        <img id="myface" src = "images/icon/myface2.png" width="300px" />
-                        <h1>DARIAN LIO </h1>
-                         <div class="linespace"></div>
-                        <p>Computer Engineer | Web Developer | Queen's University</p>
-                    </div>
-                </section>
-                <div class="clearwrapper"></div>
-                <section id="boxes">
-                    <div class="container">
-                        <div class="box">
-                            <img src="images/icon/graphicicon.png"/>
-                            <h3>COMPUTER GRAPHICS</h3>
-                            <p>Photoshop</p>
-                        </div>
-                         <div class="box">
-                            <img src="images/icon/javaicon.png"/>
-                            <h3>JAVA</h3>
-                            <p>OOP, File Handling I/O</p>
-                        </div>
-                        <div class="box">
-                            <img src="images/icon/webicon.png"/>
-                            <h3>WEB DESIGN</h3>
-                            <p>HTML5, CSS3, JavaScript</p>
-                        </div>
-                    </div>
-                </section>
+            <p>Hi, I'm Darian! I am currently a third year student at Queen's University and I am pursuing a degree in the Bachelor of Science for Computer Engineering and Innovation Stream. <br><br> On the side, I usually like to find things to build and design, whenever I can. If not, I will probably be playing video games.</p>
+            <p>SKILLS:</p>
+            <div class="skills">
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Computer Building/Troublshooting</li>
+                    <li>Computer Graphics</li>
+                </ul>
             </div>
-            
-            <div class="clearwrapper"></div>
-            
-            <a name="about"></a>
-             <section id="sidebar">
-                <img src="images/icon/myface.png"/>
-            </section>
-            <section id="main">
-                <h3>ABOUT ME:</h3>
-                <p> Hi, my names is Darian...not the stinky fruit, Durian. I am a Computer Engineer and Web Developer from Toronto, ON. I am currently a full time student at Queen's University aiming for a degree in Bachelor of Science for Computer Engineering and Innovation Stream. <br><br> My specialty is front-end web design, transforming computer graphics to life using HTML and CSS. Outside of web development, I have strong interest in OOP in Java, and building computer hardware. 
-                </p>
-            </section>
-            
-             <div class="clearwrapper"></div>
-            
-            <section class="one-third-padding">
-                <h3>TEST</h3>
-                <p>
-                </p>
-            </section>
-
-            <section class="one-third-padding">
-                <h3>TEST 2</h3>
-                <p>
-                </p>
-            </section>
-
-            <section class="one-third-padding">
-                <h3>TEST 3</h3>
-                <p>
-                </p>
-            </section>
-
         </div>
-        
-        <footer>
-            <div id="foot">
-                <div class="social">
-                    <h3>SOCIAL PLUGIN</h3>
-                    <a class ="social github" href="http://www.github.com/darianlio">
-                        <img src="images/icon/github.png" height="50" width="50"/>
-                    </a>
-                    <a class ="social linkedin" href="https://www.linkedin.com/in/darian-lio-832128111/ ">
-                        <img src="images/icon/linkedin.png" height="50" width="50"/>
-                    </a>
+
+        <div class="portfolio">
+            <h1>Portfolio</h1> 
+            <div id="work-container">
+                <div class="box">
+                    <img src="img/matrix.png" width="200px"/>
+                    <h3>Matrix Calculator</h3>
+                    <p>Created a calculator, using Java, to perform operations depending on constructor.</p>
                 </div>
-                <div class="resume">
-                    <h3>RESUME</h3>
-                    <p>
-                        Resume.pdf <br>
-                    </p>
-                </div>  
-                <div class="contact">
-                    <h3>CONTACT</h3>
-                    <p>
-                        Location: Queen's University <br>
-                        99 University Ave, Kingston, ON, K7L 3N6 <br><br>
-                        Phone: +647 960 8813 <br>
-                        E-mail: darianlio97@gmail.com
-                    </p>
+                <div class="box">
+                    <img src="img/lib.png" width="200px"/>
+                    <h3>Queen's Library System</h3>
+                    <p>Designed a library system to track rentals for Queen’s University, utilizing OOP in Java.</p>
                 </div>
-            </div>
-            <div id="copyright">
-                <div class="copyright">
-                    <p>HOSTED USING GITHUB PAGES | COPYRIGHT &copy; 2017 DARIAN LIO </p>
+                <div class="box">
+                    <img src="img/pig.png" width="200px"/>
+                    <h3>Game of Pig</h3>
+                    <p>Created the minigame, in Java, while following the rules given.</p>
+                </div>
+                <div class="box">
+                    <img src="img/ease.png" width="200px"/>
+                    <h3>Ease</h3>
+                    <p>Developed an android app platform for community-based delivery for students. (Incomplete)</p>
+                </div>
+                <div class="box">
+                    <img src="img/robot.png" width="200px"/>
+                    <h3>Autonomous Robot</h3>
+                    <p>Constructed a robot and coded it using Arduino to compete in a playfield.</p>
                 </div>
             </div>
+        </div>
+
+        <div class="resume">
+            <h1>Resume</h1>  
+        </div>
+
+        <div class="contactme">
+            <h1>Contact Me</h1>  
+        </div>
+
+        <footer> <!--Footer-->
+            <div class="footer_container">
+                <div class="left">
+                    <div class="contact">
+                        <h4>Contact Me</h4>
+                        <a href="https://www.google.ca/maps/place/Queen's+University/@44.225575,-76.5014243,14z/data=!4m5!3m4!1s0x0:0x268a8a4f5c257211!8m2!3d44.2252781!4d-76.495142"><img class=map src="img/location.png" height="50" width="50"/></a>
+                        <p class=address>Queen's University <br> 99 University Ave <br> Kingston, ON K7L 3N6</p>
+                        <a href="mailto:darianlio97@gmail.com"><img class=mail src="img/mail.png"  height="50" width="50"/></a>
+                        <p class=email>darianlio97@gmail.com</p>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="social">
+                        <h4> Social Plugin </h4>
+                        <div class="box1">
+                            <a href="http://www.github.com/darianlio"><img class=github src="img/github.png" height="50" width="50"/></a>
+                        </div>
+                        <div class="box2">
+                            <a href="https://www.linkedin.com/in/darian-lio-832128111"><img src="img/linkedin.png" height="50" width="50"/></a>
+                        </div>
+                        <div class="box3">
+                            <a href="https://www.facebook.com/liodarian"><img src="img/fb.png" width="50" height="50"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+            <p class="copyright">&copy; 2017 | Designed by Darian Lio. All Rights Reserved.</p>      
+            <!--<p class="lastedit">Last Edited: September 19, 2017 EDT: 11:02 PM</p>
+-->
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
-        <script src="js/javascript.js"></script>
     </body>
 </html>

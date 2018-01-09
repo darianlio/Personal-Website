@@ -1,0 +1,509 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    height: 450px;
+    background: #cccccc;
+    background: url('../img/bg.jpg') center center;
+    background-size: cover;
+    border-bottom: 4px solid #a8956b;
+}
+
+.logo{
+    float: left;
+    margin: 25px 0 0 30px;
+}
+
+.logo:hover{
+    -webkit-filter: brightness(70%);
+}
+
+nav {
+    float: right;
+    margin: 30px 30px 0 0;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #dcfbff;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    clear: both;
+}
+
+.description{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.arrow-down{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.arrow-down::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff; 
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: 1s arrow infinite ease;
+    animation: 1s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+    0%, 100%{
+        top: 50px;
+    }
+    50% {
+        top: 80px;
+    }
+}
+
+@keyframes arrow {
+    0%, 100%{
+        top: 50px;
+    }
+    50% {
+        top: 80px;
+    }
+}
+
+/*ABOUT ME*/
+.aboutme{
+    background-size: cover;
+    background-color: #f0f0f0;
+    border-bottom: 4px solid #686f68;
+}
+
+.face img{
+    display: block;
+    margin: 20px auto;
+}
+
+.aboutme h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.aboutme p{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+    padding: 10px 25%;
+    text-align: justify;
+}
+
+.skills{
+     padding: 0 25% 50px;
+}
+
+.skills ul{
+    list-style-position: inside;
+    -webkit-column-count: 2; 
+    column-count: 2;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.skills ul li {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+/*PORTFOLIO*/
+.portfolio{
+    background-image: url(../img/bg7.jpg);
+    background-color: #e2e2e2;
+    background-size: cover;
+    overflow:hidden;
+    border-bottom: 4px solid #686f68;
+}
+
+.box{
+    float:left;
+    text-align: center;
+    width: 20%;
+}
+
+.box img{
+    border-radius: 1em;
+}
+
+.box h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.box p{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 10%;
+    padding-bottom: 50px;
+}
+
+.box img:hover{
+    -webkit-filter: brightness(70%);
+}
+
+.portfolio h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding: 40px;
+}
+
+/*RESUME*/
+
+.resume{
+    background-color: #f0f0f0;
+    background-size: cover;
+    border-bottom: 4px solid #686f68;
+}
+.resume h1{
+    clear:both;
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.resume p{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.res {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/*CONTACT*/
+.contactme{
+    background-image: url('../img/bg5.jpg');
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+input, textarea{
+    width: 100%;
+    box-sizing:border-box;
+    padding: 10px;
+}
+    
+textarea{
+    height: 10em;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+label{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+span{
+    display: block;
+}
+
+.contactme {
+    background-image: url(../img/bg7.jpg);
+    background-size: cover;
+}
+
+.contactme h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.contactme h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding: 10px;
+}
+
+input[type=submit]{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color: #047dbe;
+    margin-bottom: 1em;
+    border-radius: 0.4em;
+    width: 30%;
+    float: right;
+}
+
+input[type=submit]:hover{
+    -webkit-filter: brightness(70%);
+}
+
+
+/*FOOTER*/
+footer {
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+}
+
+.footer_container{
+    padding:0px 20px;
+    clear:both;
+}
+
+.footres a{
+    display:inline-block;
+    text-align: center;
+}
+
+.btn {
+    display: table;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color: #047dbe;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    
+}
+
+.btn-small{
+    font-size: 15px;
+    padding:  15px 20px;
+}
+
+.btn:hover{
+    -webkit-filter: brightness(70%);
+}
+
+.footres h4{
+    color: white;
+    font-size: 20px; 
+    font-weight: 700;
+    margin: 20px;
+    text-align: center;
+}
+
+.box4{
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+
+.contact h4{
+    color: white;
+    font-size: 20px; 
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact p{
+    color: white;
+    font-size: 12px;
+    font-weight: 700; 
+    text-align: left;
+}
+
+.contact a:hover{
+   -webkit-filter: brightness(70%);
+}
+
+.map{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.address{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.mail {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.email{
+    display: inline-block;
+}
+
+.social h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700; 
+    margin: 20px;
+}
+
+.social a:hover{
+   -webkit-filter: brightness(70%);
+}
+
+.box1, .box2, .box3{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.copyright{
+    clear: both;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 640px){
+    
+    header .logo, header nav, header nav li, .box, .box1, .box2, .box3, .box4{
+        padding: 0;
+        margin: 0;
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header { 
+        padding-bottom: 20px;
+    }
+    
+    header .logo {
+        padding-top: 40px;
+    }
+    
+    header nav{
+        padding: 10px 0;    
+    }
+    
+    header h1{
+        padding-top: 0px;
+    }
+    
+    .arrow-down{
+        position: relative;
+        margin-top: -25px;
+    }
+    
+    .face img{
+        display: block;
+        width: 100%;
+    }
+    
+    .aboutme p{
+        padding: 10px 20px;
+    }
+    
+    .skills {
+        padding: 0px 20px;
+    }
+    
+    .skills ul{
+        list-style-position: inside;
+        -webkit-column-count: 1; 
+        column-count: 1;
+    }
+    
+    .map, .mail{
+        margin-left: 20px;
+    }
+    
+    .address{
+        display: none;
+    }
+    
+    .email{
+        display:none;
+    }
+    
+    .box1, .box2, .box3{
+        width: 30%;
+    }
+    
+    .res{
+        display: block;
+        width: 100%;
+    }
+    
+}

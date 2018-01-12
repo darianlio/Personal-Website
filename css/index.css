@@ -67,9 +67,9 @@ a{
 #content {
 	text-align: center;
 	padding-top: 21.5%;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 9px 18px 23px rgba(0,0,0,0.1);
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               9px 18px 23px rgba(0,0,0,0.1);
 }
 
 #content a{
@@ -111,8 +111,10 @@ hr {
   color: white;
   font-weight: 800;
   text-align: center;
-  background-color: white;
   font-size: 0.7em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               9px 18px 23px rgba(0,0,0,0.1);  
   background: url(https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=82e54944603dc4d8ca14fd73da0ef368);
   background-attachment: fixed;
   background-position: center;
@@ -160,6 +162,9 @@ hr {
   text-align: center;
   text-transform: uppercase;
   height: 150px;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               9px 18px 23px rgba(0,0,0,0.1);
 
   /* Parallax Effect */
   /* The image used */
@@ -209,6 +214,9 @@ hr {
   line-height: 27px;
   padding: 40px 0 10px;
   text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               9px 18px 23px rgba(0,0,0,0.1);
 }
 .footer ul {
   font-size: 13px;

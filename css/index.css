@@ -21,6 +21,10 @@ h3 {
   letter-spacing: 0.3rem;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 .hvr-outline-out {
   display: inline-block;
   vertical-align: middle;
@@ -111,21 +115,50 @@ hr {
     background-color: rgba(255,255,255,0.1);
 }
 
-#main {
-  padding: 70px 0;
-  color: black;
+#aboutme {
+  padding: 70px 70px;
+  color: #53616c;
+  font-weight: 800;
+  text-align: center;
+  background-color: white;
 }
 
-#main h1{
+#aboutme h1{
   text-align: center;
   font-size: 3em;
+  padding-bottom: 20px;
+}
+
+#aboutme p {
+  font-size: 1.5em;
 }
 
 #skills{
+  color: white;
   text-align: center;
   text-transform: uppercase;
+  height: 150px;
+
+  /* Parallax Effect */
+  /* The image used */
+  background: url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=eb319b25fcdf82c6f821ff9c57964a30");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+#skills h1{
+  font-size: 2em;
+  line-height: 110px;
+}
+
+.innerskill{
+  line-height: 150px;
+  font-weight: 800;
+}
 
 .footer {
   background: #EDEFF1;
@@ -135,6 +168,7 @@ hr {
   width: 100%;
   border-bottom: 1px solid #CCCCCC;
   border-top: 1px solid #DDDDDD;
+  font-weight: 800;
 }
 
 .footer p {
@@ -170,4 +204,33 @@ hr {
   border-top: 1px solid #DDDDDD;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 800;
+}
+
+#connect {
+  text-align: center;
+}
+
+.fa-map-marker{
+  color: white;
+}
+
+.fa-envelope{
+  color: white;
+}
+
+.fa-linkedin{
+  color: white;
+}
+
+.fa-facebook{
+  color: white;
+}
+
+.fa-instagram{
+  color: white;
+}
+
+.fa-github{
+  color: white;
 }

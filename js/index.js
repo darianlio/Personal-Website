@@ -8,9 +8,9 @@ nav.style.height = "50px";
 for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
 
 	close.addEventListener("click", function(){
-	  var menuIcon = close.children;
-	  for (i = 0; i < menuIcon.length; i++){
-	  menuIcon[i].classList.toggle("active");
+	var menuIcon = close.children;
+	for (i = 0; i < menuIcon.length; i++){
+		menuIcon[i].classList.toggle("active");
 	}   
 });
 
@@ -30,7 +30,7 @@ $(window).scroll(function () {
 function reveal(){
 	$("#topNav").fadeIn();
 	$('html, body').animate({
-        scrollTop: $("#aboutme").offset().top - 50
+        scrollTop: $("#portfolio").offset().top - 50
     }, 1000);	
 }
 
@@ -106,7 +106,6 @@ function navToggle() {
 			menu[i].style.opacity="1.0";
 			menu[i].style.marginTop="0px";
 		};
-    	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 	}
 
 };

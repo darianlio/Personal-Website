@@ -61,6 +61,7 @@ a{
   background-size: cover;
   background-color: black;
   background-position: center;
+  border-bottom: 2px white solid;
 }
 
 #content {
@@ -105,6 +106,38 @@ hr {
     color: white;
 }
 
+#portfolio {
+  padding: 70px 70px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  background-color: white;
+  font-size: 0.7em;
+  background: url(https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=82e54944603dc4d8ca14fd73da0ef368);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper{
+  padding-top: 20px;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr );
+  grid-gap: 20px;
+}
+
+.box{
+  margin: 0;
+  background: #eee;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #aboutme {
   padding: 70px 70px;
   color: #53616c;
@@ -114,7 +147,6 @@ hr {
 }
 
 #aboutme h1{
-  text-align: center;
   font-size: 3em;
   padding-bottom: 20px;
 }
@@ -146,8 +178,7 @@ hr {
 }
 
 .innerskill{
-  line-height: 150px;
-  font-weight: 800;
+  padding-top: 45px;
 }
 
 .bot {
@@ -164,7 +195,6 @@ hr {
   position: relative;
   width: 100%;
   border-top: 1px solid #DDDDDD;
-  font-weight: 800;
 }
 
 .footer p {
@@ -202,7 +232,6 @@ hr {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 800;
 }
 
 #connect {
@@ -250,9 +279,7 @@ a:hover .fa-circle:before{
     width: 100%;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.8);
     box-shadow: 0 4px 4px -3px #232323;
     -moz-box-shadow: 0 4px 4px -3px #232323;
     -webkit-box-shadow: 0 4px 4px -3px #232323;
@@ -264,13 +291,13 @@ a:hover .fa-circle:before{
 }
 
 .navigation ul {
+    padding: 0;
     margin-top:30px;
     text-align:center;
     list-style:none; 
     margin-left:auto;
     margin-right:auto;
 }
-
 
 .menulist {
     width:200px;

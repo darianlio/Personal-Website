@@ -104,7 +104,7 @@ hr {
 }
 
 .boxline3{
-  width: 30%;
+  width: 100%;
   border: 0px;
   height: 3px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(83, 97, 108, 0.75), rgba(0, 0, 0, 0));
@@ -250,7 +250,7 @@ hr {
 
 .box7{
   border-top: 2px solid white;
-  background: url(../img/knuckles.jpg);
+  background: url(../img/shakespeare.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -262,18 +262,26 @@ hr {
 .box8{
   border-top: 2px solid white;
   height: 200px;
-  background-color: #ff9191;
+  background-color: #fc6e02;
   grid-column: 3/5;
   grid-row: 3;
 }
 
 .box8 .first{
-  padding-top: 25px;
+  padding-top: 15px;
   text-align: center;
   font-family: 'BebasNeueBold', sans-serif;
   letter-spacing: 1px;
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-transform: uppercase;
+}
+
+.box8 .boxline1 {
+  display: none;
+}
+
+.box8 .second {
+  display: none;
 }
 
 .box9{
@@ -667,6 +675,11 @@ a:hover .fa-circle:before{
 }
 
 @media screen and (min-width: 320px) and (max-width: 990px) {
+
+  #closebtn {
+    margin: 0;
+  }
+
   #content {
     font-size: 80%;
   }
@@ -675,6 +688,95 @@ a:hover .fa-circle:before{
     width: 100%;
     text-align: center;
     font-size: 60%;
+  }
+
+  .box1, .box3, .box5, .box7, .box9, .box12, .box13, .box16{
+    height: 300px;
+  }
+
+  .box {
+    text-align: center;
+  }
+
+  .box1 {
+    grid-column: 1/13;
+    background-position: right;
+  }
+
+  .box2 {
+    grid-row: 2;
+    grid-column: 1/13; 
+  }
+
+  .box3 {
+    grid-row: 3;
+    grid-column: 1/13; 
+  }
+
+  .box4 { 
+    grid-row: 4;
+    grid-column: 1/13; 
+  }
+
+  .box5 {
+    grid-row: 5;
+    grid-column: 1/13; 
+  }
+
+  .box6 {
+    grid-row: 6;
+    grid-column: 1/13; 
+  }
+
+  .box7 {
+    grid-row: 7;
+    grid-column: 1/13;
+  }
+
+  .box8 {
+    grid-row: 8;
+    grid-column: 1/13;
+  }
+
+  .box8 .boxline1, .box8 .second{
+    display: block;
+    font-size: 1.2em;
+  }
+
+  .box9 {
+    grid-row: 9;
+    grid-column: 1/13;
+  }
+  .box10 {
+    grid-row: 10;
+    grid-column: 1/13;
+  }
+  .box11 {
+    height: 200px;
+    grid-row: 12;
+    grid-column: 1/13;
+  }
+  .box12 {
+    grid-row: 11;
+    grid-column: 1/13;
+  }
+  .box13 {
+    grid-row: 13;
+    grid-column: 1/13;
+  }
+  .box14 {
+    grid-row: 14;
+    grid-column: 1/13;
+  }
+  .box15 {
+    height: 200px;
+    grid-row: 16;
+    grid-column: 1/13;
+  }
+  .box16 {
+    grid-row: 15;
+    grid-column: 1/13;
+    background-position: center;
   }
 
   #aboutme{

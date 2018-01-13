@@ -106,6 +106,13 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.boxline3{
+  width: 30%;
+  border: 0px;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(83, 97, 108, 0.75), rgba(0, 0, 0, 0));
+}
+
 
 .navbar-default {
     background-color: rgb(0,0,0);
@@ -121,6 +128,7 @@ hr {
 }
 
 #portfolio {
+  border-top: 2px solid white;
   padding: 70px 70px;
   color: white;
   font-weight: 800;
@@ -162,6 +170,7 @@ hr {
 }
 
 .box1{
+  border-top: 2px solid white;
   background: url(../img/money.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -172,6 +181,7 @@ hr {
 }
 
 .box2{
+  border-top: 2px solid white;
   background-color: #2d2d2d;
   grid-column: 10/13;
   grid-row: 1;
@@ -189,6 +199,7 @@ hr {
 }
 
 .box3{
+  border-top: 2px solid white;
   background: url(../img/robot.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,6 +210,7 @@ hr {
 }
 
 .box4{
+  border-top: 2px solid white;
   background-color: #f5f5f5;
   color: black;
   grid-column: 5/7;
@@ -222,6 +234,8 @@ hr {
 }
 
 .box5{
+  border-top: 2px solid white;
+  border-left: 2px solid white;
   background: url(../img/library.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,6 +245,7 @@ hr {
 }
 
 .box6{
+  border-top: 2px solid white;
   background-color: #4286f4;
   grid-column: 11/13;
   grid-row: 2;
@@ -248,6 +263,7 @@ hr {
 }
 
 .box7{
+  border-top: 2px solid white;
   background: url(../img/knuckles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -258,6 +274,7 @@ hr {
 }
 
 .box8{
+  border-top: 2px solid white;
   height: 200px;
   background-color: #ff9191;
   grid-column: 3/5;
@@ -274,6 +291,8 @@ hr {
 }
 
 .box9{
+  border-top: 2px solid white;
+  border-left: 2px solid white;
   background: url(../img/calc.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,6 +302,7 @@ hr {
 }
 
 .box10{
+  border-top: 2px solid white;
   background-color: #303666;
   height: 200px;
   grid-column: 9/13;
@@ -301,6 +321,7 @@ hr {
 }
 
 .box11{
+  border-top: 2px solid white;
   background-color: #f5f5f5;
   grid-column: 1/3;
   grid-row: 4;
@@ -320,6 +341,7 @@ hr {
 }
 
 .box12{
+  border-top: 2px solid white;
   background: url(../img/ease.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -329,6 +351,8 @@ hr {
 }
 
 .box13{
+  border-top: 2px solid white;
+  border-left: 2px solid white;
   background: url(../img/patatapclone.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,6 +362,7 @@ hr {
 }
 
 .box14{
+  border-top: 2px solid white;
   background-color: #540875;
   grid-column: 11/13;
   grid-row: 4;
@@ -355,6 +380,7 @@ hr {
 }
 
 .box15{
+  border-top: 2px solid white;
   background-color: steelblue;
   height: 325px;
   grid-column: 1/4;
@@ -373,6 +399,7 @@ hr {
 }
 
 .box16{
+  border-top: 2px solid white;
   background: url(../img/colorgame.png);
   background-repeat: no-repeat;
   background-position: right -155px;
@@ -391,7 +418,6 @@ hr {
 
 #aboutme h1{
   font-size: 3em;
-  padding-bottom: 20px;
 }
 
 #aboutme p {
@@ -434,6 +460,16 @@ hr {
 
 .innerskill{
   padding-top: 45px;
+}
+
+#experience{
+  padding-top: 200px;
+  height: 500px;
+}
+
+#experience h1{
+  text-align: center;
+  color: #53616c;
 }
 
 .bot {
@@ -490,11 +526,6 @@ hr {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-#connect {
-  margin: 0;
-  text-align: center;
 }
 
 a:hover .fa-circle:before{

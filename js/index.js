@@ -17,6 +17,7 @@ var main = document.getElementById("main");
 var menu = document.getElementsByClassName("menuitems");
 var close = document.getElementById("closebtn");
 
+
 //default to measure if/else from
 nav.style.height = "50px";
 for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
@@ -26,6 +27,10 @@ for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
 	for (i = 0; i < menuIcon.length; i++){
 		menuIcon[i].classList.toggle("active");
 	}   
+});
+
+$(".button").click(function(){
+	reveal();
 });
 
 $(".button").click(function(){

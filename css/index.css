@@ -356,7 +356,7 @@ hr {
 
 .box15{
   background-color: steelblue;
-  height: 350px;
+  height: 325px;
   grid-column: 1/4;
   grid-row: 5;
 }
@@ -375,7 +375,7 @@ hr {
 .box16{
   background: url(../img/colorgame.png);
   background-repeat: no-repeat;
-  background-position: right -130px;
+  background-position: right -155px;
   background-size: cover;
   grid-column: 4/13;
   grid-row: 5;

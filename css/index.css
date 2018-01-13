@@ -144,7 +144,6 @@ hr {
 }
 
 .box{
-    border: 2px solid white;
     background-color: black;
 }
 
@@ -166,7 +165,7 @@ hr {
   background: url(../img/money.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right -100px;
   grid-column: 1/10;
   grid-row: 1;
   height: 400px;

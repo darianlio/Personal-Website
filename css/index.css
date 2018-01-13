@@ -134,14 +134,21 @@ hr {
 
 }
 
+.box{
+  background-color: black;
+}
+
 .image {
   opacity: 1;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  -moz-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+
 }
 
 .image:hover{
-  opacity: .7;
+  background-color: black; 
+  opacity: 0.8;
 }
 
 .largewrap{
@@ -657,4 +664,24 @@ a:hover .fa-circle:before{
     z-index:100;
     color:#fff;
     cursor:pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  html, body {
+    width: 100%;
+    text-align: center;
+  }
+
+  #intro {
+    width: 100%;
+  }
+
+  #content {
+    padding: 20px;
+    font-size: 80%;
+  }
+
+  .footer {
+    text-align: center;
+  }
 }

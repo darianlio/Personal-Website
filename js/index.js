@@ -1,3 +1,17 @@
+window.sr = ScrollReveal({ duration: 1000, origin: 'bottom', reset: true });
+sr.reveal('#content h1', 100);
+sr.reveal('#content h3', 100);
+sr.reveal('#content hr', 100);
+sr.reveal('#content a', 100);
+sr.reveal('#portfolio h1', 100);
+sr.reveal('.first', 100);
+sr.reveal('.second', 100);
+sr.reveal('#aboutme', 100);
+sr.reveal('.web', 100);
+sr.reveal('.code', 100);
+sr.reveal('.build', 100);
+sr.reveal('.skill', 100);
+
 var nav = document.getElementById("topNav");
 var main = document.getElementById("main");
 var menu = document.getElementsByClassName("menuitems");

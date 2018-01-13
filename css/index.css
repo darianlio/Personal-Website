@@ -248,7 +248,7 @@ hr {
 }
 
 .box7{
-  background: url(../img/pig.jpg);
+  background: url(../img/knuckles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -265,11 +265,11 @@ hr {
 }
 
 .box8 .first{
-  line-height: 150px;
+  padding-top: 25px;
   text-align: center;
   font-family: 'BebasNeueBold', sans-serif;
   letter-spacing: 1px;
-  font-size: 3em;
+  font-size: 2.5em;
   text-transform: uppercase;
 }
 

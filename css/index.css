@@ -681,6 +681,7 @@ a:hover .fa-circle:before{
   }
 
   #content {
+    padding-top: 200px;
     font-size: 80%;
   }
 
@@ -688,6 +689,10 @@ a:hover .fa-circle:before{
     width: 100%;
     text-align: center;
     font-size: 60%;
+  }
+
+  .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16{
+    border: none;
   }
 
   .box1, .box3, .box5, .box7, .box9, .box12, .box13, .box16{
@@ -790,6 +795,10 @@ a:hover .fa-circle:before{
 
   #skills {
     height: 100%;
+  }
+
+  #skills .space {
+    padding-top: 50px;
   }
 
   .footer {

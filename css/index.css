@@ -403,7 +403,7 @@ hr {
 }
 
 #aboutme {
-  padding: 70px;
+  padding-top: 70px;
   color: #53616c;
   font-weight: 800;
   text-align: center;
@@ -418,8 +418,8 @@ hr {
   font-size: 1.5em;
 }
 
-#aboutme .img{
-  padding: 20px;
+.aboutimg{
+  margin-bottom: 70px;
   height: 400px;
   background: url("../img/design.jpg");
   background-position: center;
@@ -789,8 +789,11 @@ a:hover .fa-circle:before{
     font-size: 80%;
   }
 
-  #aboutme .img {
+ .aboutimg {
+    margin-bottom: 20px;
+    height: 250px;
     background-size: 100%;
+    width: 100%;
   }
 
   #skills {

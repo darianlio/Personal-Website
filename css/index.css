@@ -790,7 +790,7 @@ a:hover .fa-circle:before{
   }
 
  .aboutimg {
-    margin-bottom: 20px;
+    margin: 20px 0;
     height: 250px;
     background-size: 100%;
     width: 100%;

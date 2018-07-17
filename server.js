@@ -18,20 +18,10 @@ var express = require('express');
 var app = express();
 var port = 8080;
 
+//route our app
+var router = require('./app/routes');
+app.use('/', router);
+
 app.listen(port, function() {
 	console.log('app started');
 });
-
-app.get('/', function(req, res){
-	res.send('Hello world');
-});
-
-app.get('/about', function(req, res){
-	res.send('Hello world, I am the about page');
-});
-
-app.get('/contact', function(req, res){
-	res.send('Hello world, I am the contact page');
-});
-
-app.post('/contact');

@@ -25,3 +25,13 @@ app.listen(port, function() {
 app.get('/', function(req, res){
 	res.send('Hello world');
 });
+
+app.get('/about', function(req, res){
+	res.send('Hello world, I am the about page');
+});
+
+app.get('/contact', function(req, res){
+	res.send('Hello world, I am the contact page');
+});
+
+app.post('/contact');

@@ -1,5 +1,6 @@
 //require express
 var express = require('express');
+var path = require('path');
 
 // create our router object
 var router = express.Router();
@@ -8,15 +9,12 @@ var router = express.Router();
 module.exports = router;
 
 router.get('/', function(req, res){
-	res.send('Hello world');
+	res.sendFile(path.join(__dirname, '../wipindex.html'));
 });
 
 router.get('/about', function(req, res){
-	res.send('Hello world, I am the about page');
+	res.sendFile(path.join(__dirname, '../wipabout.html'));
 });
 
-router.get('/contact', function(req, res){
-	res.send('Hello world, I am the contact page');
-});
-
+router.get('/contact');
 router.post('/contact');

@@ -9,12 +9,9 @@ var router = express.Router();
 module.exports = router;
 
 router.get('/', function(req, res){
-	res.sendFile(path.join(__dirname, '../wipindex.html'));
+	res.render('pages/wipindex');
 });
 
 router.get('/about', function(req, res){
-	res.sendFile(path.join(__dirname, '../wipabout.html'));
+	res.render('pages/wipabout');
 });
-
-router.get('/contact');
-router.post('/contact');

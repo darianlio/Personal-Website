@@ -1,4 +1,8 @@
-# Hey, I'm Darian Lio
+# Darian Lio
+
+Computer Engineer / Software Developer
+
+B.AS Queen's University 2019
 
 ## This is my personal website.
 

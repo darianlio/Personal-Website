@@ -12,6 +12,10 @@ router.get('/', function(req, res){
 	res.render('pages/wipindex');
 });
 
-router.get('/about', function(req, res){
-	res.render('pages/wipabout');
+router.get('/portfolio', function(req, res){
+	res.render('pages/portfolio');
+});
+
+router.get('/resume', function(req, res){
+	res.render('pages/resume');
 });

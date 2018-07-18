@@ -4,51 +4,16 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/animation.css">
 	<link rel="stylesheet" href="/css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:100,400,700" rel="stylesheet"> 
-	<script src="/js/modernizr.custom.js"></script>
 	<title>I'm Darian Lio</title>
 </head>
 <body>
-	<div id="pt-main" class="pt-perspective">
-		<div class="pt-page pt-page-1 pt-page-moveFromRight">
-			<section class="hero hero-index">
-				<div class="hero-content hero-index-content">
-					<p id="begin"><em>Hi, I'm</em></p>
-					<h1 id="name">DARIAN LIO</h1>
-					  <div class="pt-triggers">
-						<button type="button" id="iterateEffects" class="btn pt-touch-button" data-animation="1"> PORTFOLIO </a>
-					 </div>
-					<a href="/resume" id="res" class="btn"> RESUME </a>
-				</div>
-			</section>
-		</div>
-		<div class="pt-page pt-page-2">
-			<section class="hero hero-portfolio">
-				<div class="hero-content hero-portfolio-content">
-					<div class="aboutme">
-						<h1 id="about">ABOUT</h1>
-					</div>
-					<div class="aboutme-details">
-						<h2 id="aboutdet"><--- Here are my details! ---></h2>
-						<img src="/img/profile.jpg" alt="Avatar">
-						<p class="p-title">Software Developer / Computer Engineer</p>
-						<p class="p-description">B.ASc Queen's University 2019</p>
-						<p class="p-hi"></p>
-					</div>
-					<div class="portfolio">
-						<h2>Here's what I've done so far</h2>
-					</div>
-				</div>
-			</section>
-		</div>
-	</div>
+	<!-- Main Content Here -->
+	<%- defineContent('hero') %>
 	<script src="/js/jquery-3.3.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/jquery.dlmenu.js"></script>
-	<script src="/js/pagetransitions.js"></script>
 	<script src="/js/script.js"></script>
 </body>
 </html>

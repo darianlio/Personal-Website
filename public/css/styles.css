@@ -2,7 +2,6 @@ html, body{
   height: 100%;
   margin: 0;
   font-family: 'Roboto', 'sans-serif';
-  background: black;
 }
 
 .hero-index{
@@ -64,6 +63,19 @@ html, body{
   transition-duration: 0.4s;
 }
 
+.sm{
+  width: 15%;
+  padding: 20px 10px 0 10px;
+  opacity: 0.5;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.sm:hover{
+  opacity: 1;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
 
 .hero-portfolio{
   height: 100%;
@@ -79,11 +91,11 @@ html, body{
 .aboutme{
   width: 100%;
   height: 300px;
-  background: url('/img/about5.jpg');  
+  background: url('/img/about8.jpg');  
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% calc(50% - 500px);
   background-repeat: no-repeat;
-  background-size: 100%, 100%;
+  background-size: cover;
 }
 
 #about {
@@ -107,7 +119,7 @@ span{
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 30px;
 }
 
 span a, span a:hover{
@@ -121,20 +133,22 @@ span a, span a:hover{
   background: #F2F2F2;
 }
 
-.aboutme-details img{
-  border-radius: 50%;
-  width: 400px;
-  padding: 50px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #aboutdet{
   margin: 0;
+  color: rgb(0, 209, 125);
   padding-top: 100px;
-  font-weight: 500;
-  text-align: center;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: 1em;
+  text-align: left;
+}
+
+.avatar{
+  padding: 100px 50px 0 100px;
+}
+
+.avatar img{
+  width: 700px;
 }
 
 .portfolio{
@@ -145,6 +159,30 @@ span a, span a:hover{
 
 .portfolio h2{
   margin: 0;
+}
+
+.p-title{
+  padding-top: 20px;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #777;
+}
+
+.p-description{
+  letter-spacing: 0.05em;
+}
+
+.ts h1, .hi h1{
+  font-size: 1em;
+}
+
+.ts{
+  width: 30%;
+}
+
+.hi{
+  width: 30%;
 }
 
 /* Keyframes */

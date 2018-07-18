@@ -1,3 +1,7 @@
+window.sr = ScrollReveal({ reset: false});
+sr.reveal('#port-title', {duration: 500});
+sr.reveal('#git-title', {duration: 500});
+
 $(function(){
   'use strict';
   var $page = $('#main'),

@@ -1,5 +1,5 @@
 html, body{
-  height: 100%;
+  width: 100%;
   margin: 0;
   font-family: 'Roboto', 'sans-serif';
 }
@@ -678,12 +678,113 @@ figure.effect-apollo:hover p {
   }
 }
 @media (max-width: 400px) {
+  html, body{
+    overflow: auto;
+  }
+
+  .aboutme{
+    background-position: 50% calc(50% - 100px);
+    padding: none;
+  }
+
+  .aboutme-details{
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .avatar img{
+    float: none;
+  }
+
+  #aboutdet{
+    padding-top: 50px;
+    letter-spacing: 0.3em;
+    text-align: center;
+  }
+
+  .p-title{
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .p-description{
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+
+  #content{
+    margin: 0;
+  }
+
+  #port-bg{
+    background-attachment: initial;
+  }
+
+
+  #content:before, #content>:first-child:before {
+    display: none;
+  }
+
   .hero-index{
     background-size: cover;
   }
+
+  .portfolio{
+    padding-bottom: 0;
+  }
+
+  .projects{
+    padding: 0;
+  }
+
   .photos {
+    padding: 0;
     -moz-column-count:    1;
     -webkit-column-count: 1;
     column-count:         1;
+  }
+
+  figure.effect-apollo{
+    margin: 0;
+  }
+
+  .resume{
+    padding: 100px 0;
+  }
+
+  #res-desc{
+    font-size: 2vh;
+  }
+
+  .border{
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .border img{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+
+  .job-container{
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .job-container h2{
+    text-align: center;
+  }
+
+  .job-container p{
+    display: none;
+  }
+
+  .gp2, .gh2, .li2, .fb2, .ig2{
+    width: 15%;
   }
 }

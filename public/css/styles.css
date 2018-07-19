@@ -553,6 +553,9 @@ figure.effect-apollo:hover p {
   animation-direction: alternate-reverse;
 }
 
+/*RESUME*/
+
+
 @media (max-width: 1200px) {
   .photos {
     -moz-column-count:    4;

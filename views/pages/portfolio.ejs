@@ -1,9 +1,9 @@
 
 <%- contentFor('hero') %>
 <div id="main" class="hero m-scene">
-	<div class="hero-content scene-element scene-element--fadeinright">
+	<div class="hero-content">
 		<div class="hero-portfolio">
-			<div class="hero-portfolio-content">
+			<div class="hero-portfolio-content scene-element scene-element--fadeinright">
 				<div class="aboutme">
 					<span><a href="/" class="homebtn">← Home</a></span>
 					<h1 id="about">ABOUT</h1>
@@ -35,7 +35,9 @@
 				</div>
 				<div class="portfolio">
 					<div id="content">
-						<h1 id="port-title">PROJECTS</h1>
+						<div id="port-bg">
+							<h1 id="port-title">PROJECTS</h1>
+						</div>
 					</div>
 					<div class="projects">
 						<div class="photos">
@@ -148,12 +150,13 @@
 				</div> 
 				<div class="git">
 					<h2 id="git-title">Let's get in touch!</h2>
+					<p id="git-desc">Contact me on the platform that works best for you.</p>
 					<div class="social-media2">
-						<a href="https://www.facebook.com/liodarian"><img class="sm2 fb2" src="/img/icon/fb2.png"></a>
-						<a href="https://plus.google.com/u/0/116794427349586014234"><img class="sm2 gp2" src="/img/icon/gp2.png"></a>
-						<a href="https://github.com/darianlio"><img class="sm2 gh2" src="/img/icon/gh2.png"></a>
-						<a href="http://instagram.com/notdurian"><img class="sm2 ig2" src="/img/icon/ig2.png"></a>
-						<a href="https://www.linkedin.com/in/darianlio"><img class="sm2 li2" src="/img/icon/li2.png"></a>
+						<a class="sm-tran" href="https://www.facebook.com/liodarian"><img class="sm2 fb2" src="/img/icon/fb2.png"></a>
+						<a class="sm-tran" href="https://plus.google.com/u/0/116794427349586014234"><img class="sm2 gp2" src="/img/icon/gp2.png"></a>
+						<a class="sm-tran" href="https://github.com/darianlio"><img class="sm2 gh2" src="/img/icon/gh2.png"></a>
+						<a class="sm-tran" href="http://instagram.com/notdurian"><img class="sm2 ig2" src="/img/icon/ig2.png"></a>
+						<a class="sm-tran" href="https://www.linkedin.com/in/darianlio"><img class="sm2 li2" src="/img/icon/li2.png"></a>
 					</div>
 					<a href="/portfolio" class="contact-btn">CONTACT ME</a>
 				</div>

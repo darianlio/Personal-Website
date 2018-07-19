@@ -182,7 +182,7 @@ span a, span a:hover{
   padding-bottom: 50px;
 }
 
-.portfolio h2{
+.portfolio h1{
   margin: 0;
 }
 
@@ -199,15 +199,8 @@ span a, span a:hover{
   letter-spacing: 0.05em;
 }
 
-#port-title{
+#port-bg{
   padding: 100px 0;
-  font-family: 'Raleway', 'sans-serif';
-  vertical-align: middle;
-  font-weight: 700;
-  font-size: 8vh;
-  letter-spacing: 0.05em;
-  color: white;
-  text-align: center;
   background: url('/img/about.jpg');
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -215,12 +208,22 @@ span a, span a:hover{
   background-size: cover;
 }
 
+#port-title{
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 8vh;
+  letter-spacing: 0.05em;
+  color: white;
+  text-align: center;
+}
+
 #content {
   margin: 50px 150px 0 150px;
   position:relative;
 }
 #content:before, #content>:first-child:before {
-    position:absolute; content:'';
+    position:absolute; 
+    content:'';
     width:150px; height: 150px;
     border-color:#777; /* or whatever colour */
     border-style:solid; /* or whatever style */
@@ -395,12 +398,18 @@ figure.effect-apollo:hover p {
 .git{
   width: 100%;
   background: #F2F2F2;
-  height: 400px;
+  height: 425px;
   text-align: center;
 }
 
 #git-title{
+  color: #333;
   padding-top: 100px;
+}
+
+#git-desc{
+  color: #777;
+  font-size: ;
 }
 
 .social-media2{
@@ -409,20 +418,25 @@ figure.effect-apollo:hover p {
 }
 
 .sm2{
-  padding: 20px 10px 40px 10px;
-  opacity: 1;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.sm2:hover{
-  opacity: 0.7;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  padding: 10px 10px 40px 10px;
 }
 
 .gp2, .gh2, .li2, .fb2, .ig2{
   width: 5%;
+}
+
+.sm-tran{
+  opacity: 1;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.sm-tran:hover{
+  opacity: 0.7;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 .contact-btn{
@@ -435,6 +449,16 @@ figure.effect-apollo:hover p {
   letter-spacing: 0.2em;
   font-size: 2vh;
   text-decoration: none;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.contact-btn:hover{
+  background: rgb(255, 120, 100);
+  color: #F1F1F1;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 /* Keyframes */
@@ -449,6 +473,7 @@ figure.effect-apollo:hover p {
 
   100%{
     opacity: 1;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -464,6 +489,7 @@ figure.effect-apollo:hover p {
 
   100%{
     opacity: 1;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -479,6 +505,7 @@ figure.effect-apollo:hover p {
 
   100%{
     opacity: 1;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -494,6 +521,7 @@ figure.effect-apollo:hover p {
 
   100%{
     opacity: 1;
+    -webkit-transform: none;
     transform: none;
   }
 }

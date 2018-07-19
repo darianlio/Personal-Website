@@ -1,17 +1,11 @@
-window.sr = ScrollReveal({ reset: true});
-sr.reveal('#port-title h2', {duration: 1000});
-sr.reveal('#git-title', {duration: 1000});
-sr.reveal('.effect-apollo', { duration: 1000 }, 13);
-sr.reveal('.sm2', { duration: 1000 }, 5);
-sr.reveal('.contact-btn', { duration: 1000 });
+
 $(function(){
   'use strict';
-  var $page = $('#main'),
       options = {
         debug: true,
         prefetch: true,
         cacheLength: 2,
-        forms: 'form',
+        scroll: false,
         onStart: {
           duration: 400, // Duration of our animation
           render: function ($container) {
@@ -31,6 +25,13 @@ $(function(){
           }
         }
       },
-      smoothState = $page.smoothState(options).data('smoothState');
-
+      smoothState = $('#main').smoothState(options).data('smoothState');
+      sr.sync();
 });
+
+window.sr = ScrollReveal({reset: false});
+sr.reveal('#port-title', {duration: 700, origin: 'top'});
+sr.reveal('.contact-btn', {duration: 700, origin: 'top'});
+sr.reveal('#git-title', {duration: 700, origin: 'top'});
+sr.reveal('.effect-apollo', { duration: 700, orgin: 'left'}, 100);
+sr.reveal('.sm2', { duration: 700, origin: 'top'}, 100);

@@ -14,10 +14,13 @@ server.listen(8080, function() {
 });*/
 
 //using express
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 var express = require('express');
 var expressLayouts = require('express-ejs-layouts');
 var app = express();
 //use ejs and express layouts
+app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 //route our app

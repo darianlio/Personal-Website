@@ -20,7 +20,6 @@ var app = express();
 //use ejs and express layouts
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
-
 //route our app
 var router = require('./app/routes');
 app.use('/', router);
@@ -28,9 +27,8 @@ app.use('/', router);
 //set static files (css js and images) locations
 app.use(express.static(__dirname + '/public'));
 
-var server = app.listen(port, function(){
+var server = app.listen(8080, function(){
 	var host = server.address().address
 	var port = server.address().port
-
    	console.log("Example app listening at http://%s:%s", host, port)
 });

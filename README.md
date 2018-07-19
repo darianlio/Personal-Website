@@ -8,8 +8,6 @@ B.AS Queen's University 2019
 
 darianlio.com
 
-darianlio.github.io
-
 ## Language:
 
 HTML, CSS, JavaScript

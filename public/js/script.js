@@ -26,10 +26,14 @@ $(function(){
         },
         onAfter: function($container) {
           window.sr = ScrollReveal();
+          sr.reveal(".aboutme-details", {duration: 700, origin: 'top'});
           sr.reveal('#port-title', {duration: 700, origin: 'top'});
           sr.reveal('.contact-btn', {duration: 700, origin: 'top'});
           sr.reveal('#git-title', {duration: 700, origin: 'top'});
-          sr.reveal('.effect-apollo', { duration: 700, orgin: 'left'}, 100);
+          sr.reveal('.effect-apollo', { duration: 400, origin: 'left'}, 50);
+          sr.reveal('#res-title', { duration: 700, origin: 'bottom'});
+          sr.reveal('#res-desc', { duration: 700, origin: 'bottom'});
+          sr.reveal('.job', { duration: 700, origin: 'bottom'});
           sr.reveal('.sm2', { duration: 700, origin: 'top'}, 100);
           //fireUp();
         }

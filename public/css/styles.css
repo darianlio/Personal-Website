@@ -34,30 +34,29 @@ html, body{
   font-size: 500%;
   font-weight: 700;
   letter-spacing: 0.02em;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
-#res{
-  margin-left: 10px;
-}
-
-.btn {
+.butn {
+  font-family: 'Raleway', 'sans-serif';
   background-color: rgba(0,0,0,0); /* Blue */
   border: 2px solid rgb(0, 53, 112);
   color: white;
-  padding: 16px 20px;
-  width: 150px;
+  padding: 20px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   letter-spacing:0.1em;
   margin: 4px 2px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
 }
 
-.btn:hover {
+.butn:hover {
   background-color: rgb(0, 53, 112);
   color: white; 
+  text-decoration: none;
   border: 2px solid rgb(0, 53, 112);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -395,21 +394,96 @@ figure.effect-apollo:hover p {
   transition-delay: 0.1s;
 }
 
+.resume{
+  padding: 100px;
+  width: 100%;
+  background: #f2f2f2;
+  height: auto;
+}
+
+#res-title{
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 8vh;
+  letter-spacing: 0.05em;
+  color: black;
+  text-align: center;
+}
+
+#res-desc{
+  text-align: center;
+  font-size: 3.5vh;
+}
+
+#res-desc:before, #res-desc:after {
+  content:'';
+  width:10%;
+  margin: 0 20px;
+  border-bottom:#777 solid;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.job{
+  padding: 20px 0;
+}
+
+.job img{
+  display: block;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.border{
+  float: right;
+  width: 45%;
+}
+
+.job h2, .job p{
+  text-align: left;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.job-container{
+  width: 600px;
+}
+
+#job-title{
+  font-family: 'Raleway', 'sans-serif';
+  padding-bottom: 10px;
+  font-size: 2.5vh;
+  color: #3a85ff;
+}
+
+#job-role{
+  font-size: 1.7vh;
+  padding-bottom: 10px;
+  color: #6cba62;
+}
+
+#job-city{
+  font-size: 1.5vh;
+  color: #777;
+  padding-bottom: 20px;
+}
+
 .git{
   width: 100%;
-  background: #F2F2F2;
-  height: 425px;
+  background: #ffffff;
+  height: auto;
   text-align: center;
+  padding: 50px 0;
 }
 
 #git-title{
   color: #333;
-  padding-top: 100px;
 }
 
 #git-desc{
   color: #777;
   font-size: ;
+  text-align: center;
 }
 
 .social-media2{
@@ -418,7 +492,7 @@ figure.effect-apollo:hover p {
 }
 
 .sm2{
-  padding: 10px 10px 40px 10px;
+  padding: 10px 10px 25px 10px;
 }
 
 .gp2, .gh2, .li2, .fb2, .ig2{
@@ -439,15 +513,19 @@ figure.effect-apollo:hover p {
   transition-duration: 0.4s;
 }
 
+.button-contain{
+  width: 100%;
+}
+
 .contact-btn{
-  width: 200px;
+  display: inline-block;
+  width: 250px;
   background: rgb(255, 96, 61);
   color: white;
-  font-weight: 600;
-  padding: 20px 80px;
+  padding: 25px 25px;
   text-align: center;
-  letter-spacing: 0.2em;
-  font-size: 2vh;
+  letter-spacing: 0.1em;
+  font-size: 1.5vh;
   text-decoration: none;
   -webkit-transition-duration: 0.2s; /* Safari */
   transition-duration: 0.2s;

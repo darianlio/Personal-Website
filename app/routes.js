@@ -9,7 +9,7 @@ var router = express.Router();
 module.exports = router;
 
 router.get('/', function(req, res){
-	res.render('pages/wipindex');
+	res.render('pages/index');
 });
 
 router.get('/portfolio', function(req, res){

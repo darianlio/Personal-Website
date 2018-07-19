@@ -258,7 +258,6 @@ span a, span a:hover{
   position: relative;
   float: left;
   overflow: hidden;
-  width: 100%;
   background: #3085a3;
   text-align: center;
   cursor: pointer;
@@ -853,5 +852,152 @@ figure.effect-apollo:hover p {
 
   .gp2, .gh2, .li2, .fb2, .ig2{
     width: 10%;
+  }
+}
+
+@media (max-width: 411px) {
+  html, body{
+    overflow: auto;
+  }
+  .side{
+    padding: 0;
+  }
+  .aboutme{
+    background-position: 50% calc(50% - 100px);
+    padding: none;
+  }
+
+  .aboutme-details{
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .avatar{
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+
+  .avatar img{
+     float: none;
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+  }
+
+  #aboutdet{
+    padding-top: 50px;
+    letter-spacing: 0.3em;
+    text-align: center;
+  }
+
+  .p-title{
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .p-description{
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+
+  #content{
+    margin: 0;
+  }
+
+  #port-bg{
+    background-attachment: initial;
+  }
+
+
+  #content:before, #content>:first-child:before {
+    display: none;
+  }
+
+  .hero-index{
+    background-size: cover;
+  }
+
+  .portfolio{
+    padding-bottom: 0;
+  }
+
+  .projects{
+    padding: 0;
+  }
+
+  .photos {
+    padding: 25px;
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+  }
+
+  .side{
+    width: 100%;
+  }
+
+  figure.effect-apollo{
+    margin: 10px;
+  }
+
+  .resume{
+    padding: 100px 0;
+  }
+
+  #res-desc{
+    font-size: 2vh;
+  }
+
+  .border{
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .border img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+
+  #git-title{
+    margin: 0;
+  }
+
+  .job-container{
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .job-container h2{
+    padding: 0 50px;
+  }
+
+  #job-title{
+    font-size: 3.5vh;
+  }
+
+  #job-role{
+    font-size: 2.5vh;
+  }
+
+  #job-city{
+    font-size: 2vh;
+  }
+
+  .job-container p{
+    padding: 0 50px;
+  }
+
+  figcaption img{
+    width: 100%; 
+  }
+
+  .gp2, .gh2, .li2, .fb2, .ig2{
+    width: 17%;
   }
 }

@@ -1,10 +1,10 @@
-
 $(function(){
   'use strict';
-      options = {
+    var options = {
         debug: true,
         prefetch: true,
         cacheLength: 2,
+        forms: 'form',
         scroll: false,
         onStart: {
           duration: 400, // Duration of our animation
@@ -23,15 +23,16 @@ $(function(){
             // Inject the new content
             $container.html($newContent);
           }
+        },
+        onAfter: function($container) {
+          window.sr = ScrollReveal();
+          sr.reveal('#port-title', {duration: 700, origin: 'top'});
+          sr.reveal('.contact-btn', {duration: 700, origin: 'top'});
+          sr.reveal('#git-title', {duration: 700, origin: 'top'});
+          sr.reveal('.effect-apollo', { duration: 700, orgin: 'left'}, 100);
+          sr.reveal('.sm2', { duration: 700, origin: 'top'}, 100);
+          //fireUp();
         }
       },
       smoothState = $('#main').smoothState(options).data('smoothState');
-      sr.sync();
 });
-
-window.sr = ScrollReveal({reset: false});
-sr.reveal('#port-title', {duration: 700, origin: 'top'});
-sr.reveal('.contact-btn', {duration: 700, origin: 'top'});
-sr.reveal('#git-title', {duration: 700, origin: 'top'});
-sr.reveal('.effect-apollo', { duration: 700, orgin: 'left'}, 100);
-sr.reveal('.sm2', { duration: 700, origin: 'top'}, 100);

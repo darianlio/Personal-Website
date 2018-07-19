@@ -1,7 +1,9 @@
-window.sr = ScrollReveal({ reset: false});
-sr.reveal('#port-title', {duration: 500});
-sr.reveal('#git-title', {duration: 500});
-
+window.sr = ScrollReveal({ reset: true});
+sr.reveal('#port-title h2', {duration: 1000});
+sr.reveal('#git-title', {duration: 1000});
+sr.reveal('.effect-apollo', { duration: 1000 }, 13);
+sr.reveal('.sm2', { duration: 1000 }, 5);
+sr.reveal('.contact-btn', { duration: 1000 });
 $(function(){
   'use strict';
   var $page = $('#main'),

@@ -733,7 +733,9 @@ figure.effect-apollo:hover p {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+  .hero-index{
+    background-size: cover;
+  }
   .aboutme{
     background-position: 50% 50%;
   }

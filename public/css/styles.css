@@ -810,6 +810,22 @@ figure.effect-apollo:hover p {
   .job-container{
     width: 100%;
   }
+
+   .job-img{
+    width: 35%;
+  }
+
+  .border{
+    width: 100%;
+  }
+
+  .job img{
+    width: 100%;
+  }
+
+  .job-container{
+    width: 60%;
+  }
 }
 
 /* 

@@ -1,6 +1,8 @@
 html, body{
   width: 100%;
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: 'Roboto', 'sans-serif';
 }
 
@@ -19,6 +21,8 @@ html, body{
   float: left;
   top: 50%;
   left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   vertical-align: middle;
@@ -49,6 +53,7 @@ html, body{
   font-size: 16px;
   letter-spacing:0.1em;
   margin: 4px 2px;
+  -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s; /* Safari */
   transition-duration: 0.2s;
 }
@@ -58,6 +63,7 @@ html, body{
   color: white; 
   text-decoration: none;
   border: 2px solid rgb(0, 53, 112);
+  -moz-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
@@ -65,12 +71,14 @@ html, body{
 .sm{
   padding: 20px 10px 0 10px;
   opacity: 0.5;
+  -moz-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
 .sm:hover{
   opacity: 1;
+  -moz-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
@@ -100,12 +108,14 @@ html, body{
 
 .homebtn{
   color: white;
+  -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .homebtn:hover{
   color: rgb(0, 209, 125);
+  -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -131,6 +141,8 @@ html, body{
   float: left;
   top: 50%;
   left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   vertical-align: middle;
@@ -174,7 +186,7 @@ span a, span a:hover{
 
 .avatar img{
   float: right;
-  width: 80%;
+  width: 48%;
 }
 
 .portfolio{
@@ -275,6 +287,7 @@ span a, span a:hover{
   padding: 2em;
   color: #fff;
   font-size: 1.25em;
+  -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   top: -50px;
@@ -329,8 +342,10 @@ figure.effect-apollo {
 
 figure.effect-apollo img {
   opacity: 0.95;
+  -moz-transition: opacity 0.35s, -webkit-transform 0.35s;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+  -moz-transform: scale3d(1.05,1.05,1);
   -webkit-transform: scale3d(1.05,1.05,1);
   transform: scale3d(1.05,1.05,1);
 }
@@ -343,8 +358,10 @@ figure.effect-apollo figcaption::before {
   height: 100%;
   background: rgba(255,255,255,0.5);
   content: '';
+  -moz-transition: -webkit-transform 0.6s;
   -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
+  -moz-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
   -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
   transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
 }
@@ -359,6 +376,7 @@ figure.effect-apollo p {
   border-right: 4px solid #fff;
   text-align: right;
   opacity: 0;
+  -moz-transition: opacity 0.35s;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
@@ -366,6 +384,7 @@ figure.effect-apollo p {
 figure.effect-apollo h2 {
   text-align: left;
   opacity: 0;
+  -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -373,23 +392,27 @@ figure.effect-apollo h2 {
 figure.effect-apollo:hover h2 {
   text-align: left;
   opacity: 1;
+  -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 figure.effect-apollo:hover img {
   opacity: 0.6;
+  -moz-transform: scale3d(1,1,1);
   -webkit-transform: scale3d(1,1,1);
   transform: scale3d(1,1,1);
 }
 
 figure.effect-apollo:hover figcaption::before {
+  -moz-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
   -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
   transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
 }
 
 figure.effect-apollo:hover p {
   opacity: 1;
+  -moz-transition-delay: 0.1s;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
@@ -653,351 +676,135 @@ figure.effect-apollo:hover p {
   animation-direction: alternate-reverse;
 }
 
-/*RESUME*/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
+@media (min-width: 1281px) {
+  
+}
 
-@media only screen and (max-width: 1200px) {
-  .photos {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .job-container{
+    width: 100%;
   }
+}
 
-@media only screen and (max-width: 992px) {
-  html, body{
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .job-container{
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .job-container{
+    width: 100%;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .aboutme{
+    background-position: 50% 50%;
+  }
+  .job-container{
     width: 100%;
   }
 
-  .aboutme{
-    background-position: 50% calc(50% - 400px);
-    padding: none;  
-  }
-
-  .avatar{
-    padding-left: 50px;
-    width: 50%;
+  .avatar {
+    padding: 10px 25px 25px 25px;
+    width: 100%;
   }
 
   .avatar img{
-    width: 90%;
+    width: 100%;
   }
 
   .side{
-    float: left;
-    width: 50%;
-    padding-right: 50px;
+    width: 100%;
+  }
+
+  #aboutdet, .p-title{
+    text-align: center;
+  }
+
+  #aboutdet{
+    padding-top: 0;
+    font-size: 100%;
+    letter-spacing: 0.3em;
   }
 
   .p-title{
-    font-size: 2em;
+    padding-top: 10px;
+    font-size: 150%;
   }
 
-  .photos {
-    -moz-column-count:    2;
+  .p-description{
+    padding-top: 0;
+  }
+
+  #content{
+    margin: 40px;
+  }
+
+  .photos{
+    padding: 0;
     -webkit-column-count: 2;
+    -webkit-column-gap:   10px;
+    -moz-column-count:    2;
+    -moz-column-gap:      10px;
     column-count:         2;
-  }
-
-  .border{
-    width: 50%;
-  }
-
-  .border img{
-    width: 100%;
-  }
-
-  .job-container{
-    width: 50%;
-  }
-
-  .gp2, .gh2, .li2, .fb2, .ig2{
-    width: 7%;
-  }
-
-  #contact-btn{
-    font-size: 1.7vh;
-  }
-}
-@media only screen and (max-width: 768px) {
-  html, body{
-    overflow: auto;
-  }
-
-  .aboutme{
-    background-position: 50% calc(50% - 100px);
-    padding: none;
-  }
-
-  .aboutme-details{
-    height: auto;
-    padding-bottom: 50px;
-  }
-
-  .avatar{
-    padding: 50px 0 0 0;
-    width: 100%;
-  }
-
-  .avatar img{
-     float: none;
-     width: 70%;
-     margin-left: auto;
-     margin-right: auto;
-     display: block;
-  }
-
-  #aboutdet{
-    padding-top: 50px;
-    letter-spacing: 0.3em;
-    text-align: center;
-  }
-
-  .p-title{
-    text-align: center;
-    font-size: 2em;
-  }
-
-  .p-description{
-    text-align: center;
-    padding: 0 15px;
-    margin-bottom: 10px;
-  }
-
-  #content{
-    margin: 0;
-  }
-
-  #port-bg{
-    background-attachment: initial;
-  }
-
-
-  #content:before, #content>:first-child:before {
-    display: none;
-  }
-
-  .hero-index{
-    background-size: cover;
-  }
-
-  .portfolio{
-    padding-bottom: 0;
-  }
-
-  .projects{
-    padding: 0;
-  }
-
-  .photos {
-    padding: 50px;
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-  }
-
-  .side{
-    width: 100%;
-  }
-
-  figure.effect-apollo{
-    margin: 10px;
+    column-gap:           10px;  
   }
 
   .resume{
-    padding: 100px 0;
+    padding: 50px 20px 20px 20px;
   }
 
   #res-desc{
-    font-size: 3vh;
+    font-size: 120%;
+  }
+
+  #res-desc:before, #res-desc:after {
+    width: 5%;
   }
 
   .border{
-    text-align: center;
-    float: none;
     width: 100%;
+    padding-bottom: 30px;
   }
 
-  .border img{
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-bottom: 20px;
-    margin-right: auto;
-  }
-
-  .job-container{
-    width: 100%;
-    padding: 0 40px;
-  }
-
-  .job-container h2{
-    padding: 0 120px;
-  }
-
-  #job-title{
-    font-size: 3.5vh;
-  }
-
-  #job-role{
-    font-size: 2.5vh;
-  }
-
-  #job-city{
-    font-size: 2vh;
-  }
-
-  .job-container p{
-    padding: 0 120px;
-  }
-
-  .gp2, .gh2, .li2, .fb2, .ig2{
-    width: 10%;
-  }
-}
-
-@media only screen and (max-width: 411px) {
-  html, body{
-    overflow: auto;
-  }
-  .side{
-    padding: 0;
-  }
-  .aboutme{
-    background-position: 50% calc(50% - 100px);
-    padding: none;
-  }
-
-  .aboutme-details{
-    height: auto;
-    padding-bottom: 50px;
-  }
-
-  .avatar{
-    padding: 50px 0 0 0;
-    width: 100%;
-  }
-
-  .avatar img{
-     float: none;
-     width: 70%;
-     margin-left: auto;
-     margin-right: auto;
-     display: block;
-  }
-
-  #aboutdet{
-    padding-top: 50px;
-    letter-spacing: 0.3em;
-    text-align: center;
-  }
-
-  .p-title{
-    text-align: center;
-    font-size: 2em;
-  }
-
-  .p-description{
-    text-align: center;
-    padding: 0 15px;
-    margin-bottom: 10px;
-  }
-
-  #content{
-    margin: 0;
-  }
-
-  #port-bg{
-    background-attachment: initial;
-  }
-
-
-  #content:before, #content>:first-child:before {
-    display: none;
-  }
-
-  .hero-index{
-    background-size: cover;
-  }
-
-  .portfolio{
-    padding-bottom: 0;
-  }
-
-  .projects{
-    padding: 0;
-  }
-
-  .photos {
-    padding: 25px;
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-  }
-
-  .side{
-    width: 100%;
-  }
-
-  figure.effect-apollo{
-    margin: 10px;
-  }
-
-  .resume{
-    padding: 100px 0;
-  }
-
-  #res-desc{
-    font-size: 2vh;
-  }
-
-  .border{
-    text-align: center;
-    float: none;
-    width: 100%;
-  }
-
-  .border img{
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-bottom: 20px;
-    margin-right: auto;
-  }
-
-  #git-title{
-    margin: 0;
-  }
-
-  .job-container{
-    width: 100%;
-    padding: 0 40px;
-  }
-
-  .job-container h2{
-    padding: 0 50px;
-  }
-
-  #job-title{
-    font-size: 3.5vh;
-  }
-
-  #job-role{
-    font-size: 2.5vh;
-  }
-
-  #job-city{
-    font-size: 2vh;
-  }
-
-  .job-container p{
-    padding: 0 50px;
-  }
-
-  figcaption img{
-    width: 100%; 
-  }
-
-  .gp2, .gh2, .li2, .fb2, .ig2{
+  .gh2, .li2, .fb2, .gp2, .ig2{
     width: 17%;
   }
 }

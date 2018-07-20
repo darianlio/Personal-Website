@@ -700,8 +700,59 @@ figure.effect-apollo:hover p {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .avatar {
+    padding: 25px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .avatar img{
+    float: none;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .side{
+    width: 50%;
+  }
+
+  #aboutdet{
+    padding-top: 25px;
+  }
+
   .job-container{
     width: 100%;
+  }
+
+  #content{
+    margin: 50px;
+  }
+
+  .job-img{
+    width: 35%;
+  }
+
+  .border{
+    width: 100%;
+  }
+
+  .job img{
+    width: 100%;
+  }
+
+  .job-container{
+    width: 60%;
+  }
+
+  .photos{
+    padding: 0;
+  }
+
+  .gh2, .li2, .fb2, .gp2, .ig2{
+    width: 10%;
   }
 }
 
@@ -722,8 +773,73 @@ figure.effect-apollo:hover p {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .avatar {
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .avatar img{
+    float: none;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .side{
+    width: 100%;
+  }
+
+  #aboutdet{
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .p-title{
+    padding-top: 10px;
+    font-size: 300%;
+    text-align: center;
+  }
+
   .job-container{
     width: 100%;
+  }
+
+  #content{
+    margin: 50px;
+  }
+
+  .photos{
+    padding: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   10px;
+    -moz-column-count:    3;
+    -moz-column-gap:      10px;
+    column-count:         3;
+    column-gap:           10px;  
+  }
+
+  .resume{
+    padding: 50px 20px 20px 20px;
+  }
+
+  #res-desc{
+    font-size: 200%;
+  }
+
+  .border{
+    width: 100%;
+    padding: 0 100px 40px 100px;
+  }
+
+  .job-container{
+    padding: 0 100px;
+  }
+
+  .gh2, .li2, .fb2, .gp2, .ig2{
+    width: 11%;
   }
 }
 
@@ -735,6 +851,10 @@ figure.effect-apollo:hover p {
 @media (min-width: 320px) and (max-width: 480px) {
   .hero-index{
     background-size: cover;
+  }
+
+  #about{
+    font-size: 350%;
   }
   .aboutme{
     background-position: 50% 50%;
@@ -768,7 +888,7 @@ figure.effect-apollo:hover p {
 
   .p-title{
     padding-top: 10px;
-    font-size: 150%;
+    font-size: 200%;
   }
 
   .p-description{
@@ -779,6 +899,11 @@ figure.effect-apollo:hover p {
     margin: 40px;
   }
 
+  #port-title {
+    padding: 20px 0;
+    font-size: 350%;
+  }
+
   .photos{
     padding: 0;
     -webkit-column-count: 2;
@@ -787,6 +912,20 @@ figure.effect-apollo:hover p {
     -moz-column-gap:      10px;
     column-count:         2;
     column-gap:           10px;  
+  }
+
+  .photos figure figcaption {
+    padding: 0.7em;
+
+  }
+
+  .photos h2{
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+  }
+
+  .photos p{
+    display: none;
   }
 
   .resume{

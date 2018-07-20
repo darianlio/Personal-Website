@@ -256,7 +256,7 @@ span a, span a:hover{
 }
 
 .photos{
-  padding: 0 100px;
+  padding: 20px 100px;
   /* Prevent vertical gaps */
   -webkit-column-count: 4;
   -webkit-column-gap:   10px;

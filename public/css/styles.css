@@ -656,14 +656,14 @@ figure.effect-apollo:hover p {
 /*RESUME*/
 
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .photos {
     -moz-column-count:    4;
     -webkit-column-count: 4;
     column-count:         4;
   }
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   html, body{
     width: 100%;
   }
@@ -718,7 +718,7 @@ figure.effect-apollo:hover p {
     font-size: 1.7vh;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   html, body{
     overflow: auto;
   }
@@ -855,7 +855,7 @@ figure.effect-apollo:hover p {
   }
 }
 
-@media (max-width: 411px) {
+@media only screen and (max-width: 411px) {
   html, body{
     overflow: auto;
   }

@@ -1009,6 +1009,10 @@ figure.effect-apollo:hover p {
     margin: 1em;
   }
 
+  figure.patatap, figure.threesigma, figure.omts{
+    font-size: 0.9em;
+  }
+
 
   .resume{
     padding: 50px 20px 20px 20px;

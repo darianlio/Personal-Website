@@ -15,3 +15,7 @@ HTML, CSS, JavaScript
 ## Dependencies:
 
 Node.js
+Express
+
+## Hosted by:
+DigitalOcean

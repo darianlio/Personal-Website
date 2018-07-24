@@ -17,5 +17,5 @@ HTML, CSS, JavaScript
 Node.js
 Express
 
-## Hosted by:
+## Deployed on:
 DigitalOcean
